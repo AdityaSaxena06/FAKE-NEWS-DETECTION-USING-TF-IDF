@@ -1,0 +1,56 @@
+{
+  "dataset": "ISOT Fake News Dataset (Kaggle)",
+  "samples_total": 44689,
+  "samples_train": 35751,
+  "samples_test": 8938,
+  "labels": {
+    "0": "Fake",
+    "1": "Real"
+  },
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "vocab_size": 5000
+  },
+  "reported_metrics": {
+    "naive_bayes": {
+      "name": "Multinomial Naive Bayes",
+      "accuracy": 0.950101,
+      "precision_fake": 0.953672,
+      "recall_fake": 0.951235,
+      "f1_fake": 0.952452,
+      "confusion_matrix": [
+        [
+          4467,
+          229
+        ],
+        [
+          217,
+          4025
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "name": "Logistic Regression",
+      "accuracy": 0.990714,
+      "precision_fake": 0.993158,
+      "recall_fake": 0.98914,
+      "f1_fake": 0.991145,
+      "confusion_matrix": [
+        [
+          4645,
+          51
+        ],
+        [
+          32,
+          4210
+        ]
+      ]
+    }
+  },
+  "exported_at": "2026-11-22T09:53:23Z"
+}
